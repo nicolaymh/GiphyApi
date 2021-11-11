@@ -1,11 +1,12 @@
-import { Api } from './Api';
-import './App.css';
+import { ApiTrending } from './components/ApiTrending';
 import { TrendingProvider } from './context/TrendingContext';
+
+import './style/App.css';
 
 function App() {
     return (
         <TrendingProvider>
-            <Api />
+            <ApiTrending />
         </TrendingProvider>
     );
 }
