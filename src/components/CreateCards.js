@@ -5,11 +5,11 @@ import { DrawCard } from './DrawCard';
 import '../style/AnimatedBorder.css';
 
 export const CreateCards = () => {
-    const { trending } = useContext(TrendingContext);
+    const { data } = useContext(TrendingContext);
 
     return (
         <div className='cards'>
-            {trending.map((gif) => (
+            {data.map((gif) => (
                 <DrawCard key={gif.id} {...gif} />
             ))}
         </div>

@@ -1,15 +1,19 @@
-import { createContext } from 'react';
-import { useTrendingFetch } from '../hooks/useTrendingFetch';
+import { createContext, useState } from 'react';
+import useFetch from '../hooks/useFetch';
 
 const TrendingContext = createContext();
 
 const TrendingProvider = ({ children }) => {
-    const { trending, loadingTrending } = useTrendingFetch();
+    const [inputSearch, setInputSearch] = useState('');
+    const [searchGifs, setSearchGifs] = useState('');
 
-    const data = { trending, loadingTrending };
+    const { callApi } = useFetch(searchGifs);
+    const { data, loading } = callApi;
+
+    const info = { data, loading };
 
     return (
-        <TrendingContext.Provider value={data}>
+        <TrendingContext.Provider value={info}>
             {children}
         </TrendingContext.Provider>
     );
