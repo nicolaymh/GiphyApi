@@ -19,9 +19,7 @@ main {
 }
 
 .card-info {
-    border: 1px solid greenyellow;
-    border-radius: 2rem;
-    overflow: hidden;
+    position: absolute;
 }
 
 .container-img {
