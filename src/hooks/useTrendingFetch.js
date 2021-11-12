@@ -4,14 +4,16 @@ export const useTrendingFetch = () => {
     const [trending, setTrending] = useState([]);
     const [loadingTrending, setLoadingTrending] = useState(true);
 
+    const [search, setSearch] = useState('');
+
     useEffect(() => {
         trendingGifs();
     }, []);
 
     const trendingGifs = async () => {
         const apiKey = '4qwGARlJxOJbOxb5KId8KSYwdeopTbel';
-        const url = `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}`;
-        const resp = await fetch(url);
+        const urlTrending = `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}`;
+        const resp = await fetch(urlTrending);
         console.log(resp);
 
         const { data } = await resp.json();
@@ -31,5 +33,5 @@ export const useTrendingFetch = () => {
         setLoadingTrending(false);
     };
 
-    return { trending, loadingTrending };
+    return { search, trending, loadingTrending };
 };
