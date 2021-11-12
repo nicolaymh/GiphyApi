@@ -1,10 +1,12 @@
 import React from 'react';
 
-export const DrawCard = ({ title, imageUrl }) => {
+export const DrawCard = ({ title, imageUrl, giphyInfo }) => {
     return (
         <div className='card-info'>
             <div className='container-img'>
-                <img className='img' src={imageUrl} alt={`img-${title}`} />
+                <a href={giphyInfo}>
+                    <img className='img' src={imageUrl} alt={`gif-${title}`} />
+                </a>
             </div>
         </div>
     );
