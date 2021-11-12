@@ -5,10 +5,10 @@ export const useTrendingFetch = () => {
     const [loadingTrending, setLoadingTrending] = useState(true);
 
     useEffect(() => {
-        trandingGifs();
+        trendingGifs();
     }, []);
 
-    const trandingGifs = async () => {
+    const trendingGifs = async () => {
         const apiKey = '4qwGARlJxOJbOxb5KId8KSYwdeopTbel';
         const url = `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}`;
         const resp = await fetch(url);

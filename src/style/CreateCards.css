@@ -14,16 +14,22 @@ main {
     grid-auto-flow: dense;
 }
 
-.card-info:nth-child(5n + 1) {
-    grid-column: span 2;
+@media (min-width: 42rem) {
+    .card-info:nth-child(5n + 1) {
+        grid-column: span 2;
+    }
 }
 
 .card-info {
-    position: absolute;
 }
 
 .container-img {
-    height: 35rem;
+    height: 25rem;
+}
+@media (min-width: 42rem) {
+    .container-img {
+        height: 35rem;
+    }
 }
 
 .img {
