@@ -10,14 +10,21 @@ export const useTrendingFetch = () => {
 
     const trandingGifs = async () => {
         const apiKey = '4qwGARlJxOJbOxb5KId8KSYwdeopTbel';
-        const url = `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}&limit=10`;
+        const url = `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}`;
         const resp = await fetch(url);
-        // console.log(resp);
+        console.log(resp);
 
-        const data = await resp.json();
-        // console.log(data);
+        const { data } = await resp.json();
+        console.log(data);
 
-        const dataOrganized = [...data.data];
+        const dataOrganized = data.map((gif) => {
+            return {
+                id: gif.id,
+                title: gif.title,
+                imageUrl: gif.images.downsized_medium.url,
+                giphyInfo: gif.url,
+            };
+        });
         console.log(dataOrganized);
 
         setTrending(dataOrganized);

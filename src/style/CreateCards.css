@@ -1,0 +1,27 @@
+.title-trending {
+    text-align: center;
+    color: antiquewhite;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card-info {
+    border: 1px solid greenyellow;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.container-img {
+    height: 35rem;
+}
+
+.img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
