@@ -14,7 +14,7 @@ main {
     grid-auto-flow: dense;
 }
 
-@media (min-width: 42rem) {
+@media (min-width: 40rem) {
     .card-info:nth-child(5n + 1) {
         grid-column: span 2;
     }
@@ -24,9 +24,9 @@ main {
 }
 
 .container-img {
-    height: 25rem;
+    height: 28rem;
 }
-@media (min-width: 42rem) {
+@media (min-width: 40rem) {
     .container-img {
         height: 35rem;
     }
