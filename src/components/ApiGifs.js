@@ -4,7 +4,7 @@ import CallApiContext from '../context/CallApiContext';
 
 import '../style/CreateCards.css';
 
-export const ApiTrending = () => {
+export const ApiGifs = () => {
     const { loading } = useContext(CallApiContext);
 
     return (

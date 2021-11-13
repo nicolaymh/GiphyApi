@@ -1,4 +1,4 @@
-import { ApiTrending } from './components/ApiTrending';
+import { ApiGifs } from './components/ApiGifs';
 import { Nav } from './components/Nav';
 import { CallApiProvider } from './context/CallApiContext';
 
@@ -8,7 +8,7 @@ function App() {
     return (
         <CallApiProvider>
             <Nav />
-            <ApiTrending />
+            <ApiGifs />
         </CallApiProvider>
     );
 }
