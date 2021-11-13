@@ -12,7 +12,11 @@ export const ApiTrending = () => {
             <div className='container'>
                 <h1 className='title-trending'>Gif Trending</h1>
 
-                {loading ? <h2>Loading...</h2> : <CreateCards />}
+                {loading ? (
+                    <h2 style={{ color: 'white' }}>Loading...</h2>
+                ) : (
+                    <CreateCards />
+                )}
             </div>
         </main>
     );

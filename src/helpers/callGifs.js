@@ -1,11 +1,14 @@
 export const callGifs = async (searchGifs) => {
     const apiKey = '4qwGARlJxOJbOxb5KId8KSYwdeopTbel';
-    let url = !searchGifs
+    const url = !searchGifs
         ? `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}`
         : `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchGifs}`;
 
     const resp = await fetch(url);
+    console.log(resp);
+
     const { data } = await resp.json();
+    console.log(data);
 
     const dataOrganized = data.map((gif) => {
         return {
@@ -16,7 +19,7 @@ export const callGifs = async (searchGifs) => {
         };
     });
 
-    console.log(dataOrganized);
+    // console.log(dataOrganized);
 
     return dataOrganized;
 };

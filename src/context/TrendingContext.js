@@ -10,10 +10,24 @@ const TrendingProvider = ({ children }) => {
     const { callApi } = useFetch(searchGifs);
     const { data, loading } = callApi;
 
-    const info = { data, loading };
+    const handleInputSearch = (e) => {
+        e.preventDefault();
+        setSearchGifs(inputSearch);
+    };
+    const handleChange = ({ target }) => {
+        setInputSearch(target.value);
+    };
+
+    const props = {
+        data,
+        loading,
+        handleInputSearch,
+        handleChange,
+        inputSearch,
+    };
 
     return (
-        <TrendingContext.Provider value={info}>
+        <TrendingContext.Provider value={props}>
             {children}
         </TrendingContext.Provider>
     );
