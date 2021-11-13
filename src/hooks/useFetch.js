@@ -5,6 +5,7 @@ const useFetch = (searchGifs) => {
     const [callApi, setCallApi] = useState({ data: [], loading: true });
 
     useEffect(() => {
+        setCallApi((previous) => ({ ...previous, loading: true }));
         callGifs(searchGifs).then((gifs) => {
             setTimeout(() => {
                 setCallApi({ data: gifs, loading: false });
