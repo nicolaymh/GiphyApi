@@ -3,6 +3,7 @@ import { CreateCards } from './CreateCards';
 import CallApiContext from '../context/CallApiContext';
 
 import '../style/CreateCards.css';
+import { Loading } from './Loading';
 
 export const ApiGifs = () => {
     const { loading } = useContext(CallApiContext);
@@ -12,11 +13,7 @@ export const ApiGifs = () => {
             <div className='container'>
                 <h1 className='title-trending'>Gif Trending</h1>
 
-                {loading ? (
-                    <h2 style={{ color: 'white' }}>Loading...</h2>
-                ) : (
-                    <CreateCards />
-                )}
+                {loading ? <Loading /> : <CreateCards />}
             </div>
         </main>
     );

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { DrawCard } from './DrawCard';
+import CallApiContext from '../context/CallApiContext';
 
 import '../style/AnimatedBorder.css';
-import CallApiContext from '../context/CallApiContext';
 
 export const CreateCards = () => {
     const { data } = useContext(CallApiContext);

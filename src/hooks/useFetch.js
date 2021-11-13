@@ -9,7 +9,7 @@ const useFetch = (searchGifs) => {
         callGifs(searchGifs).then((gifs) => {
             setTimeout(() => {
                 setCallApi({ data: gifs, loading: false });
-            }, 1000);
+            }, 2000);
         });
     }, [searchGifs]);
 
