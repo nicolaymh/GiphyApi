@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import TrendingContext from '../context/TrendingContext';
 import { DrawCard } from './DrawCard';
 
 import '../style/AnimatedBorder.css';
+import CallApiContext from '../context/CallApiContext';
 
 export const CreateCards = () => {
-    const { data } = useContext(TrendingContext);
+    const { data } = useContext(CallApiContext);
 
     return (
         <div className='cards'>

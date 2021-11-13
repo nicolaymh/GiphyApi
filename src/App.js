@@ -1,15 +1,15 @@
 import { ApiTrending } from './components/ApiTrending';
 import { Nav } from './components/Nav';
-import { TrendingProvider } from './context/TrendingContext';
+import { CallApiProvider } from './context/CallApiContext';
 
 import './style/App.css';
 
 function App() {
     return (
-        <TrendingProvider>
+        <CallApiProvider>
             <Nav />
             <ApiTrending />
-        </TrendingProvider>
+        </CallApiProvider>
     );
 }
 

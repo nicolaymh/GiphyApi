@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import TrendingContext from '../context/TrendingContext';
 import { CreateCards } from './CreateCards';
+import CallApiContext from '../context/CallApiContext';
 
 import '../style/CreateCards.css';
 
 export const ApiTrending = () => {
-    const { loading } = useContext(TrendingContext);
+    const { loading } = useContext(CallApiContext);
 
     return (
         <main>

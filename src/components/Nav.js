@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import TrendingContext from '../context/TrendingContext';
+import CallApiContext from '../context/CallApiContext';
 
 export const Nav = () => {
     const { handleInputSearch, handleChange, inputSearch } =
-        useContext(TrendingContext);
+        useContext(CallApiContext);
 
     return (
         <nav>
