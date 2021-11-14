@@ -2,15 +2,15 @@ main {
     margin-bottom: 3rem;
 }
 
-.title-trending {
+.title-gifs {
     text-align: center;
     color: antiquewhite;
 }
 
 .cards {
     display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 26rem), 1fr));
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 28rem), 5fr));
     grid-auto-flow: dense;
 }
 

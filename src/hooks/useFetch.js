@@ -1,17 +1,17 @@
 import { useEffect, useState } from 'react';
 import { callGifs } from '../helpers/callGifs';
 
-const useFetch = (searchGifs) => {
+const useFetch = (searchGifs, setNoGifts) => {
     const [callApi, setCallApi] = useState({ data: [], loading: true });
 
     useEffect(() => {
         setCallApi((previous) => ({ ...previous, loading: true }));
-        callGifs(searchGifs).then((gifs) => {
+        callGifs(searchGifs, setNoGifts).then((gifs) => {
             setTimeout(() => {
                 setCallApi({ data: gifs, loading: false });
-            }, 2000);
+            }, 1000);
         });
-    }, [searchGifs]);
+    }, [searchGifs, setNoGifts]);
 
     return { callApi };
 };
