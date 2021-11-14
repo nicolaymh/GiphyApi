@@ -1,8 +1,8 @@
-.loading {
+.notice {
     display: flex;
     justify-content: center;
 }
 
-.loading-img {
+.notice-img {
     width: 30rem;
 }

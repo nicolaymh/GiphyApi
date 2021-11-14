@@ -5,16 +5,15 @@ import CallApiContext from '../context/CallApiContext';
 import '../style/CreateCards.css';
 import { Loading } from './Loading';
 import { NogGifts } from './NogGifts';
+import Title from './Title';
 
 export const ApiGifs = () => {
-    const { searchGifs, loading, noGifts } = useContext(CallApiContext);
+    const { loading, noGifts } = useContext(CallApiContext);
 
     return (
         <main>
             <div className='container'>
-                <h1 className='title-gifs'>
-                    {!searchGifs ? 'Gifs Trending' : `${searchGifs} gifs`}
-                </h1>
+                <Title />
 
                 {!noGifts ? (
                     <NogGifts />
