@@ -4,14 +4,14 @@ import CallApiContext from '../context/CallApiContext';
 import '../style/AnimatedTitlle.css';
 
 const Title = () => {
-    const { searchGifs, noGifts } = useContext(CallApiContext);
+    const { searchGifs, noGifs } = useContext(CallApiContext);
 
     return (
         <div>
             <h1 className='animated-title'>
                 {!searchGifs
                     ? 'Gifs Trending'
-                    : !noGifts
+                    : !noGifs
                     ? 'No gif found by that name'
                     : `${searchGifs} Gifs`}
             </h1>

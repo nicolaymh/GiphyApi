@@ -6,9 +6,9 @@ const CallApiContext = createContext();
 const CallApiProvider = ({ children }) => {
     const [inputSearch, setInputSearch] = useState('');
     const [searchGifs, setSearchGifs] = useState('');
-    const [noGifts, setNoGifts] = useState(true);
+    const [noGifs, setNoGifs] = useState(true);
 
-    const { callApi } = useFetch(searchGifs, setNoGifts);
+    const { callApi } = useFetch(searchGifs, setNoGifs);
     const { data, loading } = callApi;
 
     const handleInputSearch = (e) => {
@@ -26,7 +26,7 @@ const CallApiProvider = ({ children }) => {
         handleChange,
         inputSearch,
         searchGifs,
-        noGifts,
+        noGifs,
     };
 
     return (

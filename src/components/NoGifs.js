@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../style/Notice.css';
 
-export const NogGifts = () => {
+export const NoGifs = () => {
     return (
         <div className='container notice'>
             <div>

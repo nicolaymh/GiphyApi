@@ -1,4 +1,4 @@
-export const callGifs = async (searchGifs, setNoGifts) => {
+export const callGifs = async (searchGifs, setNoGifs) => {
     const apiKey = '4qwGARlJxOJbOxb5KId8KSYwdeopTbel';
     const url = !searchGifs
         ? `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}`
@@ -11,9 +11,9 @@ export const callGifs = async (searchGifs, setNoGifts) => {
     console.log(data);
 
     if (data.length) {
-        setNoGifts(true);
+        setNoGifs(true);
     } else {
-        setNoGifts(false);
+        setNoGifs(false);
     }
 
     const dataOrganized = data.map((gif) => {
