@@ -1,0 +1,17 @@
+.container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-contenedor-img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 15rem;
+    height: 15rem;
+}
+
+.img-avatar {
+    object-fit: cover;
+    object-position: center bottom;
+}
