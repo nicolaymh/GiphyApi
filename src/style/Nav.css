@@ -31,9 +31,12 @@
     padding: 0.8rem 0;
     font-size: 2rem;
     padding: 2rem;
-    background-color: #ffffff;
-    border: none;
+    border: 0;
 }
+.input-nav:focus {
+    outline: none;
+}
+
 @media (min-width: 768px) {
     .input-nav {
         font-size: 3rem;
@@ -42,7 +45,6 @@
 
 .nav-button {
     height: 5rem;
-    padding: 0;
     border: none;
 }
 

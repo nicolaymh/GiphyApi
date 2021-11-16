@@ -30,6 +30,7 @@ export const Nav = () => {
                         <img
                             className='img-button'
                             src='https://media2.giphy.com/media/0GsNMsRwDKKMjiwIe5/200w.webp?cid=ecf05e476ulngzl3gl6hehucmgcvdvdvsiiogvcuhzo63cu5&rid=200w.webp&ct=g'
+                            alt='search-icon'
                         />
                     </button>
                 </form>
