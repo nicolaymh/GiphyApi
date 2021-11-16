@@ -8,20 +8,16 @@ export const Nav = () => {
         useContext(CallApiContext);
 
     return (
-        <nav>
+        <nav className='nav'>
             <div className='container container-nav'>
-                <div>
-                    <img src='' alt='img-portada' />
-                </div>
-                <div className='nav-contenedor-img'>
-                    <img
-                        className='img-avatar'
-                        src='https://media2.giphy.com/media/gVoBC0SuaHStq/giphy.gif?cid=ecf05e47q8zqohqieltne1rbsclysx1k7evjv3k237c99lfq&rid=giphy.gif&ct=g'
-                        alt='gif-nav'
-                    />
-                </div>
-                <form onSubmit={handleInputSearch}>
+                <img
+                    className='cover-img'
+                    src='https://miro.medium.com/max/1400/1*tYt2BjbGzTo97IkADUNMGw.gif'
+                    alt='img-portada'
+                />
+                <form className='form-nav' onSubmit={handleInputSearch}>
                     <input
+                        className='input-nav'
                         type='text'
                         onChange={handleChange}
                         value={inputSearch}
