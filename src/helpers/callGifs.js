@@ -5,10 +5,10 @@ export const callGifs = async (searchGifs, setNoGifs) => {
         : `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchGifs}`;
 
     const resp = await fetch(url);
-    console.log(resp);
+    // console.log(resp);
 
     const { data } = await resp.json();
-    console.log(data);
+    // console.log(data);
 
     if (data.length) {
         setNoGifs(true);
