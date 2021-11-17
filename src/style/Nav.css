@@ -1,4 +1,17 @@
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+@media (min-width: 968px) {
+    .nav {
+        margin-bottom: 6.5rem;
+    }
+}
+
 .container-nav {
+    margin: 0 auto;
 }
 
 .cover-img {
@@ -8,6 +21,7 @@
     margin-top: -2rem;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 @media (min-width: 400px) {
     .form-nav {

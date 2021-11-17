@@ -13,7 +13,7 @@ export const ApiGifs = () => {
     return (
         <main>
             <div className='container'>
-                <Title />
+                {/* <Title /> */}
 
                 {!noGifs ? <NoGifs /> : loading ? <Loading /> : <CreateCards />}
             </div>

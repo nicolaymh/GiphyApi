@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import CallApiContext from '../context/CallApiContext';
 
 import '../style/Nav.css';
+import Title from './Title';
 
 export const Nav = () => {
     const { handleInputSearch, handleChange, inputSearch } =
@@ -34,6 +35,8 @@ export const Nav = () => {
                         />
                     </button>
                 </form>
+
+                <Title />
             </div>
         </nav>
     );

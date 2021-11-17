@@ -7,7 +7,7 @@ const Title = () => {
     const { searchGifs, noGifs } = useContext(CallApiContext);
 
     return (
-        <div>
+        <div className='container-title'>
             <h1 className='animated-title'>
                 {!searchGifs
                     ? 'Gifs Trending'
