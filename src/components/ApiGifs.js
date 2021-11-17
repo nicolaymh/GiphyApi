@@ -12,8 +12,6 @@ export const ApiGifs = () => {
     return (
         <main>
             <div className='container'>
-                {/* <Title /> */}
-
                 {!noGifs ? <NoGifs /> : loading ? <Loading /> : <CreateCards />}
             </div>
         </main>
