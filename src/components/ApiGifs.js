@@ -5,7 +5,6 @@ import CallApiContext from '../context/CallApiContext';
 import '../style/CreateCards.css';
 import { Loading } from './Loading';
 import { NoGifs } from './NoGifs';
-import Title from './Title';
 
 export const ApiGifs = () => {
     const { loading, noGifs } = useContext(CallApiContext);
