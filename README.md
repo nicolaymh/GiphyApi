@@ -1,4 +1,4 @@
-:small*blue_diamond: :small_red_triangle_down: # \_GIF SEARCH APP* :small_red_triangle_down: :small_blue_diamond:
+:small_blue_diamond: :small_red_triangle_down: # \_GIF SEARCH APP* :small_red_triangle_down: :small_blue_diamond:
 
 ---
 
