@@ -10,7 +10,7 @@
 
 ---
 
-[WEBSITE](http://localhost:3000/ 'WEBSITE')
+[WEB-SITE](https://giphygifsapp.netlify.app/ "WEB-SITE")
 
 <p align="center">
   <img width="500" src="./src/readmeImages/screenshot1.PNG">
@@ -36,4 +36,5 @@
 
 ---
 
-[WEBSITE](http://localhost:3000/ 'WEBSITE')
+[WEB-SITE](https://giphygifsapp.netlify.app/ "WEB-SITE")
+
